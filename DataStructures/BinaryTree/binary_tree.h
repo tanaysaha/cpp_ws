@@ -6,12 +6,13 @@
 class BinaryTree {
     private:
         Node* root;
-        int height;
     public:
         BinaryTree();
         BinaryTree(Node*);
-        void printHeight();
         Node* insert(int);
+        int FindHeight();
+        void RotateRight();
+        void RotateLeft();
 };
 
 #endif

@@ -11,6 +11,13 @@ int main()
         std::cin >> t;
         bt.insert(t);
     } while (t!=-1);
-    bt.printHeight();
+
+    std::cout << "Before Rotation: " << bt.FindHeight() << std::endl;
+    
+    bt.RotateRight();
+    std::cout << "After Rotation: " << bt.FindHeight() << std::endl;
+    
+    bt.RotateLeft();
+    std::cout << "After Rotation: " << bt.FindHeight() << std::endl;
     return 0;
 }
